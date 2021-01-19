@@ -72,8 +72,8 @@ then
                 exit 1
             fi
 
-            # libicu versions: libicu66 -> libicu63 -> libicu60 -> libicu57 -> libicu55 -> libicu52
-            apt install -y libicu66 || apt install -y libicu63 || apt install -y libicu60 || apt install -y libicu57 || apt install -y libicu55 || apt install -y libicu52
+            # libicu versions: libicu67 -> libicu66 -> libicu63 -> libicu60 -> libicu57 -> libicu55 -> libicu52
+            apt install -y libicu67 || apt install -y libicu66 || apt install -y libicu63 || apt install -y libicu60 || apt install -y libicu57 || apt install -y libicu55 || apt install -y libicu52
             if [ $? -ne 0 ]
             then
                 echo "'apt' failed with exit code '$?'"
